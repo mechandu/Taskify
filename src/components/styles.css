@@ -1,0 +1,83 @@
+.input{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    position: relative;
+}
+.inputBox{
+    border: none;
+    width: 100%;
+padding: 20px 30px;
+border-radius: 10px 15px;
+font-size: 25px;
+transition: 0.2s;
+}
+.inputBox:focus{
+    outline: none;
+}
+.goButton{
+position: absolute;
+background-color: #2f74c0;
+border:none ;
+border-radius: 25px;
+font-size: 15px;
+right:0px;
+height: 50px;
+width: 50px;
+margin: 12px;
+color: white;
+transition: 0.2s all;
+box-shadow: 0 0 10px black;
+}
+.goButton:hover{
+    background-color: #32a852;
+}
+.todos{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    flex-wrap: wrap;
+}
+.todoItemCard {
+    display: flex;
+    width: 28%;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: aquamarine;
+}
+.todoText{
+    flex:1;
+    padding: 5px;
+    border:none ;
+    font-size: 20px;
+}
+.icon{
+    cursor: pointer;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+@media(max-width:1200px){
+    .todoItemCard{
+        width: 40%;
+    }
+}
+@media(max-width:700px){
+    .input{
+        width:95%
+    }
+    .todos{
+        width:95%
+    }
+    .todoItemCard{
+width: 100%;
+    }
+}
+
+.strikeText{
+    text-decoration: line-through;
+    color: purple;
+}
